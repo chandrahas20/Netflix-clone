@@ -23,7 +23,6 @@ jobs:
             echo "Commit message must start with 'V2FS-', but found: '$commit_message'"
             exit 1
           fi
-          
       - name: Continue workflow if check passes
         if: ${{ failure() }}
         run: echo "Workflow continues as check passed"
